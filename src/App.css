@@ -1,0 +1,230 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: #232323;
+}
+
+.appName {
+  background-color: #0070bb;
+  color: white;
+  margin: 3rem 1rem;
+  height: 4rem;
+  max-width: 768px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+
+.appName:hover {
+  box-shadow: 0 0 0.5rem #0070bb;
+}
+
+.wrapper {
+  max-width: 768px;
+  border: 4px solid rgb(122, 122, 122);
+  box-shadow: 0 0 0.5rem rgb(122, 122, 122);
+  color: white;
+  padding: 1.5rem;
+  margin: 1.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #232323;
+}
+
+.inpWrapper {
+  margin: 1rem;
+}
+
+.bothInp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  border: none;
+  outline: none;
+  border: 3px solid white;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  padding: 0.3rem;
+}
+
+input:focus {
+  border: 1px solid rgb(112, 193, 209);
+}
+
+fieldset {
+  border: 3px solid rgb(213, 213, 213);
+  border-radius: 0.5rem;
+  color: rgb(112, 193, 209);
+  font-weight: 600;
+  font-size: large;
+  padding: 0.65rem;
+}
+
+fieldset:hover {
+  border: 3px solid rgb(112, 193, 209);
+  box-shadow: 0 0 0.3rem rgb(112, 193, 209);
+}
+
+legend {
+  padding: 0rem 0.2rem;
+}
+
+#taskInp {
+  width: 20rem;
+  height: 2.2rem;
+}
+
+#dateInp {
+  width: 9rem;
+  height: 2.2rem;
+}
+
+.add {
+  font-weight: 700;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 4rem;
+  margin-top: 0.5rem;
+  background-color: #0070bb;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.add:active {
+  background-color: #0287df;
+}
+
+.filterWrapper {
+  margin: 1rem;
+  margin-bottom: 0rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.filter {
+  border: none;
+  height: 2rem;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.column {
+  color: rgb(112, 193, 209);
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0rem 1.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.5fr;
+}
+
+.eachTask {
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.5fr;
+  place-items: center;
+  border: 3px solid rgb(122, 122, 122);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.eachTask:hover {
+  border: 3px solid rgb(112, 193, 209);
+  box-shadow: 0 0 0.3rem rgb(112, 193, 209);
+}
+
+.tickDeleteWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.box {
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.deleteBtn {
+  background-color: #ff0800;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.4rem;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+@media (max-width: 760px) {
+  .bothInp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  #one {
+    grid-column: 1/4;
+  }
+  #two {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .inpWrapper {
+    margin: 0rem 0rem;
+  }
+  .add {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.7rem;
+  }
+
+  .eachTask {
+    margin: 1rem 0rem;
+  }
+
+  .appName {
+    height: 3.5rem;
+    margin: 1.5rem 1rem;
+  }
+
+  #taskInp {
+    width: 100%;
+    height: 2rem;
+  }
+
+  #dateInp {
+    width: 100%;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  fieldset {
+    padding: 0.4rem;
+  }
+
+  legend {
+    padding: 0rem;
+  }
+
+  .inpWrapper {
+    margin: auto;
+  }
+}
