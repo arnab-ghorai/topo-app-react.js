@@ -34,7 +34,7 @@ function Todo() {
           <button
             className={"filter"}
             style={{
-              background: button.click ? "#0070bb" : null,
+              background: button.click ? "#1e90ff" : null,
               color: button.click ? "white" : null,
             }}
             key={button.name}
